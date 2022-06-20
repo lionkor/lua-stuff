@@ -1,8 +1,7 @@
-
+-- Copyright (c) 2022 Lion Kortlepel. Use allowed under MIT license.
 -- returns the players ranked by laps and times.
 -- we do this by first ranking players by their laps,
 -- and then ranking them by times within each lap 'group'.
--- Copyright (c) 2022 Lion Kortlepel. Use under MIT license.
 function rankPlayers(players, laps, times)
     -- this function will be used later to sort
     -- players by their times. 
@@ -70,6 +69,10 @@ function rankPlayers(players, laps, times)
     -- we finally return the table. it has just player names, in the right order.
     return result
 end
+
+-- the following is just example code
+-- and is irrelevant to the operation of the function above.
+-- it demonstrates the expected data formats as well.
 
 local players = {"caitex", "deer", "lion"}
 local laps = {lion=4, caitex=3, deer=3}
