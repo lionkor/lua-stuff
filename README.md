@@ -1,4 +1,4 @@
-# Lua snippets
+# Lua stuff
 
 For [BeamMP](https://github.com/BeamMP/BeamMP) and [BeamMP-Server](https://github.com/BeamMP/BeamMP-Server).
 
