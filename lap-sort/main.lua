@@ -43,7 +43,7 @@ function rankPlayers(players, laps, times)
     -- and keep iterating. ipairs() or pairs() would break at nil values.
     -- we sort each lap's players by their time, so that each lap table
     -- ends up with a list of players from best time to worst time (in that lap).
-    for i=0,maxLap do
+    for i=1,maxLap do
         -- since we dont use pairs() or similar, we need to check for nil
         if playersPerLap[i] then
             table.sort(playersPerLap[i], sortByTime)
@@ -57,9 +57,9 @@ function rankPlayers(players, laps, times)
     -- but we also iterate from the back to the front. 
     -- we need to do this, because: higher lap = better.
     local result = {}
-    for i=maxLap,0,-1 do
+    for i=maxLap,1,-1 do
         if playersPerLap[i] then
-            -- these tables are already sorted in the right order, so we can 
+            -- these tables are already sorted in the right order, so we can
             -- just add the players in there as-is.
             for _,v in ipairs(playersPerLap[i]) do
                 table.insert(result, v)
