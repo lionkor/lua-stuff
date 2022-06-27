@@ -1,7 +1,7 @@
 -- Copyright (c) 2022 Lion Kortlepel. Use allowed under MIT license.
 
 local minutes = 5
-local message = "this is lionkor's periodic reminder plugin"
+local message = "this is lionkor's periodic announcement plugin"
 
 function discordReminder()
 	MP.SendChatMessage(-1, message)
