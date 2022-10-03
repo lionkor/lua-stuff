@@ -20,7 +20,6 @@ local messages = {
 local lastIndex = nil
 
 local function getRandomIntNot(from, to, notvalue)
-    print(from, to, notvalue)
     if to == notvalue then
         return Util.RandomIntRange(from, notvalue - 1)
     elseif from == notvalue then
