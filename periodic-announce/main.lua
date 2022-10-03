@@ -41,7 +41,7 @@ function periodicAnnouncement()
     if lastIndex and #messages > 1 then
         index = getRandomIntNot(1, #messages, lastIndex)
     end
-	MP.SendChatMessage(-1, messages[index])
+    MP.SendChatMessage(-1, messages[index])
     lastIndex = index
 end
 
